@@ -1,0 +1,616 @@
+/* Add these at the top of your CSS file */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Add this class for containers that need smooth scrolling */
+.smooth-scroll {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  will-change: scroll-position;
+  -webkit-overflow-scrolling: touch;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Remove overflow-y-scroll from your page components since SmoothScroll handles scrolling */
+.pagebkg {
+  width: 100%;
+  height: 100%;
+  /* remove overflow-y-scroll */
+} */
+.navbtn{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.navlink{
+  background-color: rgba(25,25,25, 0.5);
+  height: 100%;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+  color: #fff;
+  -webkit-transition: all ease 0.9s;
+  -moz-transition: all ease 0.9s;
+  -o-transition: all ease 0.9s;
+  -ms-transition: all ease 0.9s;
+  transition: all ease 0.9s;
+}
+
+.navlink2{
+  background-color: rgba(25,25,25, 0.5);
+  height: fit-content;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+  color: #000;
+  -webkit-transition: all ease 0.9s;
+  -moz-transition: all ease 0.9s;
+  -o-transition: all ease 0.9s;
+  -ms-transition: all ease 0.9s;
+  transition: all ease 0.9s;
+}
+
+.navlink:hover, .navlink2:hover{
+  background-color: rgba(250,250,250, 0.6);
+  color: rgba(25,25,25,0.5); 
+  cursor: pointer;
+}
+
+.navbkg{
+  background-color: rgba(15, 88, 0, 1);
+  border-bottom-style: solid;
+  border-bottom-color: rgba(250,250,250, 0.6);
+  border-bottom-width: 2px;
+}
+
+.textlink{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: clamp(1rem, 1vw + .5rem, 1.5rem);
+  text-align: center;
+}
+
+.apptext  {
+  font-size: clamp(1.5rem, 1.5vw + 1rem, 3rem);
+  font-weight: 500;
+  color: rgba(25, 25, 25, 0.7);
+  padding: 0;
+  text-align: center;
+}
+
+.apptextw  {
+  font-size: clamp(1.5rem, 1.5vw + 1rem, 3rem);
+  font-weight: 500;
+  color: rgba(250, 250, 250, 0.7);
+  padding: 0;
+  text-align: center;
+}
+
+.apptextmini  {
+  font-size: clamp(1rem, 0.5vw + 1rem, 1.5rem);
+  font-weight: 400;
+  color: rgba(250, 250, 250, 0.7);
+  padding: 0;
+  text-align: center;
+}
+
+.apptextminib  {
+  font-size: clamp(1rem, 0.5vw + 1rem, 1.5rem);
+  font-weight: 400;
+  color: rgba(25, 25, 25, 0.7);
+  padding: 0;
+  text-align: center;
+}
+
+.apptextBold  {
+  font-size: clamp(1.5rem, 1.5vw + 1rem, 3rem);
+  font-weight: bold;
+  color: rgba(25, 25, 25, 0.7);
+  padding: 0;
+  text-align: center;
+}
+
+.apptextlg  {
+  font-size: clamp(2.5rem, 2vw + 2rem, 4rem);
+  font-weight: 500;
+  color: rgba(25, 25, 25, 0.8);
+  padding: 0;
+  text-align: center;
+}
+
+.apptextlgw  {
+  font-size: clamp(3rem, 4vw + 2rem, 6rem);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  padding: 0;
+  text-align: center;
+}
+
+.spacers{
+  height: 7vh;
+  width: 100%;
+}
+
+.spacer{
+  height: 15vh;
+  width: 100%;
+}
+
+.spacerl{
+  height: 35vh;
+  width: 100%;
+}
+
+.sectionht{
+  height: max-content;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.overunder{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.overtext{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 4;
+  padding: 0;
+  margin: 0;
+}
+
+.over{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  padding: 0;
+  margin: 0;
+}
+
+.under{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-controlsP {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.carousel-controlsN {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.progh{
+  height: max-content;
+}
+
+.scale-image
+{
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  transform: translateZ(0);
+  will-change: transform;
+  content-visibility: auto;
+}
+
+.scale-image75
+{
+  display: block;
+  width: auto;
+  max-width: 75%;
+}
+
+.vidwrapper{
+   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+ }
+ 
+ .vidplayer{
+   position: absolute;
+   top: 0;
+   left: 0;
+   inset: 0;
+ }
+ 
+
+@media screen and (max-width: 600px) {
+  .scale-image
+  {
+    display: block;
+    width: auto;
+    max-width: 80%;
+  }
+}
+
+.ATKbkg{
+  background-image:
+  url("/ATKopenImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.trscbkg{
+  background-image:
+  url("/TRSCint222.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.trscprogbkg{
+  background-image:
+  url("/keeyasklakearial.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.canmapbkg{
+  background-image:
+  url("/Canadawide.png");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.ancientbkg{
+  background-image:
+  url("/AncesterCamp.jpg");
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+  height: 80vh;
+  height: 80dvh;
+}
+
+.tcnwaterbkg{
+  background-image:
+  url("/TCNwideWaterquality.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.keeyaskbkg{
+  background-image:
+  url("/impoundintro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+
+.sedimentbkg{
+  background-image:
+  url("/fishwater.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 120dvh;
+}
+
+.crdbkg{
+  background-image:
+  url("/CRDcover.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.nrdbkg{
+  background-image:
+  url("/BurntwoodAriel.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+
+.Stewardsbkg{
+  background-image:
+  url("/Eaglerapids2020.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(250,250,250, 0.6);
+  border-bottom-width: 2px;
+  height: 92vh;
+}
+
+.stewardaerialbkg{
+  background-image:
+  url("/Stewardfullsscreen.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.challengesbkg{
+  background-image:
+  url("/BurntwoodNelsonRiver.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.impoundbkg{
+  background-image:
+  url("/ImpoundBKG.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.Openerbkg{
+  background-image:
+  url("/OpenBanner.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 80dvh;
+}
+
+@media screen and (max-width: 600px) {
+  .Openerbkg{
+    background-image:
+    url("/OpenBanner.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 85dvh;
+}
+}
+
+.pagebkg{
+  background-image: linear-gradient(to bottom right, #ffffff, #002c00);
+}
+
+.tcnvision{
+  background-image:
+  url("/TCNairnsky.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* hamburger menu */
+.hamlink{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  width: fit-content;
+  height: fit-content;
+}
+
+.menuToggle
+{
+  display: block;
+  position: relative;
+  top: 24px;
+  left: 21px;
+  width: fit-content;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media only screen and (max-width: 595px) {
+  .menuToggle{
+      top: 20px;
+      left: 21px;
+  }
+}
+.menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+.menuToggle a:hover
+{
+  color: rgb(249, 245, 192);
+}
+
+.menuToggle input
+{
+  display: block;
+  width: 80px;
+  height: 64px;
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+.menuToggle span
+{
+  display: block;
+  width: 50px;
+  height: 6px;
+  margin-bottom: 7px;
+  position: relative;
+  background: #136100;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+@media screen and (max-width: 595px) {
+  .menuToggle span{
+      width: 40px;
+      height: 4px;
+      margin-bottom: 7px;
+  }
+}
+
+.menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+.menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+.menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+.menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu
+{
+  position: absolute;
+  width: 400px;
+  height: 100vh;
+  height: 100dvh;
+  margin: -100px 0 0 -50px;
+  padding: 20px;
+  padding-top: 125px;
+  border-right: 5px solid rgba(26,26,26,0.5);
+  background: linear-gradient(to bottom, #aeffab, #004706) ;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.menu li
+{
+  padding: 10px 0;
+  font-size: 32px;
+  text-align: center;
+}
+/*And let's slide it in from the left*/
+.menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* Map */
+
+.map-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.map{
+  width: 900px;
+  height: 510px;
+}
+
+.cardhorz{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #136100;
+  padding: 10px;
+  height: 50%;
+}
+
+  .cardvert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #136100;
+    margin-bottom: 2rem;
+  }
+img {
+  loading: lazy;
+  decoding: async;
+}
