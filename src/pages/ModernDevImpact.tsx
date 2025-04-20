@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const TCN = React.lazy(() => import('@/components/TCNmap'));
 export default function ModernDevImpact() {
     return (
-        <div className="w-screen h-screen pagebkg">
+        <div className="w-screen h-screen pagebkg overflow-y-scroll">
             <div className="navbtn">
                 <Link to="/" className={buttonVariants({ variant: "secondary" })}>Back</Link>
             </div>
@@ -17,15 +17,7 @@ export default function ModernDevImpact() {
                     <motion.div 
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ 
-                            duration: 1.5, 
-                            ease: "easeInOut",
-                            staggerChildren: 0.1
-                        }}
-                        style={{
-                            willChange: 'transform',
-                            translateZ: 0
-                        }}
+                        transition={{ duration: 1.5, ease: "easeInOut" }}
                         className="bg-opacity-50 bg-gray-200 p-4 mb-4"
                     >
                         <div className="apptextlg">

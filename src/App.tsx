@@ -65,7 +65,6 @@ const Openerpage = () => {
                 <Link to="/pages/ModernDevImpact" className="navlink flex flex-col justify-center textlink">Water Quality</Link>
                 <Link to="/pages/StewardshipHome" className="navlink flex flex-col justify-center textlink">Land Stewardship</Link>
                 <Link to="/pages/TRSCPrograms" className="navlink flex flex-col justify-center textlink">Adverse Effects Programs</Link>
-
             </div>
         )
     }
@@ -287,10 +286,6 @@ const Openerpage = () => {
                     <img src="/TRSCinterior.jpg" loading="lazy"/>
                 </div>
             </motion.div> 
-            
-
-
-
             <div className="spacer"/>  
             <div className="lg:mt-16">
                 <div className="grid lg:grid-cols-2 flex justify-center">

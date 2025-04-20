@@ -1,40 +1,7 @@
-/* Add these at the top of your CSS file */
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  overflow: hidden;
-  height: 100%;
-}
-
-body {
-  overflow: hidden;
-  height: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#root {
-  height: 100%;
-}
-
-/* Add this class for containers that need smooth scrolling */
-.smooth-scroll {
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  will-change: scroll-position;
-  -webkit-overflow-scrolling: touch;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-}
-
-/* Remove overflow-y-scroll from your page components since SmoothScroll handles scrolling */
-.pagebkg {
-  width: 100%;
-  height: 100%;
-  /* remove overflow-y-scroll */
+/* #root {
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
 } */
 .navbtn{
   position: absolute;
@@ -232,10 +199,6 @@ body {
   display: block;
   width: auto;
   max-width: 100%;
-  height: auto;
-  transform: translateZ(0);
-  will-change: transform;
-  content-visibility: auto;
 }
 
 .scale-image75
@@ -610,7 +573,3 @@ body {
     border-color: #136100;
     margin-bottom: 2rem;
   }
-img {
-  loading: lazy;
-  decoding: async;
-}
