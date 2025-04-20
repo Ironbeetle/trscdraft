@@ -21,7 +21,6 @@ export default function ChallengesHome() {
         };
 
     }, []);
-
     const Sec1M = () => {
         return(
             <div className="lg:mt-16">
@@ -40,7 +39,6 @@ export default function ChallengesHome() {
             </div>
         )
     }
-
     const Sec2M = () => {
         return(
             <div className="lg:mt-16">
@@ -64,7 +62,6 @@ export default function ChallengesHome() {
             </div>
         )
     }
-
     const Sec1D = () => {
         return(
             <div className="lg:mt-16">
@@ -83,7 +80,6 @@ export default function ChallengesHome() {
             </div>
         )
     }
-
     const Sec2D = () => {
         return(
             <div className="lg:mt-16">
@@ -107,7 +103,6 @@ export default function ChallengesHome() {
             </div>
         )
     }
-
     const Sec1Select = () => {
         if (width < 479) {
             return <Sec1M />
@@ -117,7 +112,6 @@ export default function ChallengesHome() {
             return <Sec1D />
           }
     }
-
     const Sec2Select = () => {
         if (width < 479) {
             return <Sec2M />
@@ -127,7 +121,6 @@ export default function ChallengesHome() {
             return <Sec2D />
           }
     }
-
     return (
         <div className="w-screen h-screen pagebkg overflow-y-scroll">
             <div className="navbtn">
